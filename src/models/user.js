@@ -48,6 +48,8 @@ const userSchema = mongoose.Schema({
             required: true
         }
     }]
+}, {
+    timestamps: true   // Allow to create fields when the user is created or updated
 })
 
 userSchema.virtual('tasks', {
